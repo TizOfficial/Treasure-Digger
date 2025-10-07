@@ -3,7 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Treasure Digger - Coming Soon</title>
+    <meta http-equiv="Pragma" content="cache" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta http-equiv="content-Language" content="en" />
+    <meta name="description" content="Treasure Digger is a game You can Play in your Server Focused in Digging: Collect Treasures, sell them To buy Upgrades, compete with your friends, and More!" />
+    <meta name="keywords" content="Discord, Discord Bot, Treasure, Dig, Digger, Treasure Digger" />
+    <meta name="author" content="DevTim99" />
+    <meta name="publisher" content="Tim Maik" />
+    <meta name="copyright" content="2025 Treasure Digger" />
+    <meta name="audience" content="Alle" />
+    <meta name="page-type" content="Produktinfo" />
+    <meta name="page-topic" content="Computer" />
+    <meta http-equiv="Reply-to" content="timneumann1517@gmail.com" />
+    <meta name="expires" content="" />
+    <meta name="revisit-after" content="2 days" />
+    <title>Coming Soon - Treasure Digger</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -105,49 +119,24 @@
 
                 <div class="progress-wrap" aria-hidden="false">
                     <div class="progress-info">
-                        <strong id="progressPercent">0%</strong>
+                        <strong id="progressPercent">10%</strong>
                         <span>Entwicklung abgeschlossen</span>
                     </div>
                     <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
                         <div class="progress-fill" style="width:65%"></div>
                     </div>
-                    <p class="coming-note">Wir arbeiten an Balancing, neuen Schatzarten und Boost-Systemen — bleib dabei!</p>
+                    <p class="coming-note">Wir arbeiten an /dig befehl — bleib dabei!</p>
+                    <p>Bei 50% Entwicklung wird die Open Beta gestartet.</p>
                 </div>
 
                 <div class="coming-ctas">
                     <a href="https://discord.com/oauth2/authorize?client_id=1424789665759887490" class="btn btn-primary" id="inviteBtn"><i class="fab fa-discord"></i> Bot Einladen</a>
                     <a href="https://discord.gg/ZbENqmbj7u" class="btn btn-secondary" id="discordBtn"><i class="fab fa-discord"></i> Discord beitreten</a>
-                    <p>wenn du auf Nutzungsbedingungen oder Datenschutz klickst wirst du weiter geleitet, die Website ist fertig der bot aber nicht deswegen auch die comingsoon page!</p>
+                    <p>&copy; 2025 Treasure Digger. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </header>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Treasure Digger</h3>
-                    <p>Der ultimative Discord Economy Bot für Schatzsucher!</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-discord"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="terms.html">Nutzungsbedingungen</a></li>
-                        <li><a href="privacy.html">Datenschutz</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Treasure Digger. Alle Rechte vorbehalten.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
     <script>
@@ -156,7 +145,7 @@
             const fill = document.querySelector('.progress-fill');
             const percentLabel = document.getElementById('progressPercent');
             let pct = 0;
-            const target = 0; // current status %
+            const target = 10; // current status %
             const step = () => {
                 if (pct >= target) return;
                 pct++;
@@ -171,21 +160,21 @@
             const notifyMsg = document.getElementById('notifyMsg');
             copyBtn.addEventListener('click', async () => {
                 try {
-                    await navigator.clipboard.writeText('https://discord.gg/your-invite-link');
+                    await navigator.clipboard.writeText('https://discord.gg/ZbENqmbj7u');
                     notifyMsg.textContent = 'Link kopiert — füge ihn deinem Discord hinzu, um benachrichtigt zu werden.';
                 } catch (e) {
-                    notifyMsg.textContent = 'Kopieren nicht unterstützt — hier ist der Link: https://discord.gg/your-invite-link';
+                    notifyMsg.textContent = 'Kopieren nicht unterstützt — hier ist der Link: https://discord.gg/ZbENqmbj7u';
                 }
             });
 
             // Placeholder actions for CTA buttons
             document.getElementById('inviteBtn').addEventListener('click', (e) => {
                 e.preventDefault();
-                window.open('https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot%20applications.commands', '_blank');
+                window.open('https://discord.com/oauth2/authorize?client_id=1424789665759887490', '_blank');
             });
             document.getElementById('discordBtn').addEventListener('click', (e) => {
                 e.preventDefault();
-                window.open('https://discord.gg/', '_blank');
+                window.open('https://discord.gg/ZbENqmbj7u', '_blank');
             });
 
             // Reuse mobile nav toggle
